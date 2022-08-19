@@ -57,11 +57,9 @@ function App() {
             </div>
             <div>
                 {
-                    
                 groupData.map(item=>{
                      return renderItems(item)
                 })
-                
                 }
             </div>
         </div>
