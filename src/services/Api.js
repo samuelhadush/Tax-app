@@ -2,12 +2,21 @@ import Data from './resource.json'
 
 export  class API {
     static getData(){
-        // console.log(Data);
-        // return Data
+        // simulating api call
         return new Promise((resolve,reject)=>{
             try{
-                // resolve(Data)
-                setTimeout(()=>resolve(Data),1000); // simulating request delay
+                setTimeout(()=>resolve(Data),500); // simulating request delay
+            }catch(err){
+                reject(err)
+            }
+        });
+    }
+    static search(query){
+        // simulating api call
+        return new Promise((resolve,reject)=>{
+            try{
+                const result = Data.filter(item=>JSON.stringify(item).toLowerCase().includes(query.toLowerCase()))
+                setTimeout(()=>resolve(result),500); // simulating request delay
             }catch(err){
                 reject(err)
             }
