@@ -1,8 +1,8 @@
 import React from 'react'
-
+import '../styles/style.css'
 function Button(props) {
   return (
-    <button type={props.type} onClick={props.onClick}>{props.children}</button>
+    <button className='addTaxBtn' type={props.type} onClick={props.onClick}>{props.children}</button>
   )
 }
 

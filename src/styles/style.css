@@ -1,0 +1,189 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 75%;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.content {
+    padding: 0rem 2rem ;
+}
+
+.line {
+    border-top: 1px solid #E4E6EA;
+    padding: 2rem;
+}
+
+.title {
+    padding-left: 2rem;
+
+}
+input {
+    outline: none;
+}
+.tax-name-rate {
+    display: flex;
+    width: 75%;
+    
+}
+.tax-name-rate > input:first-child {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0.5rem;
+    position: relative;
+    width: 75%;
+    margin-right: 10px;
+}
+.tax-name-rate > input:last-child {
+    position: relative;
+    border: none;
+    /* padding: 0.5rem; */
+    width: 25%;
+}
+.rate > input {
+    border: none;
+}
+.rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+.rate > span {
+    color:#bbbfc3
+}
+
+.seach {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 18rem;
+    padding: 0 10px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+    /* padding: 0.5rem; */
+}
+.seach > input {
+    border: none;
+    padding: 10px 0;
+}
+.seach > span {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.seach-icon {
+    color: gray;
+    font-size: 15px;
+}
+  .addTax {
+    display: flex;
+    justify-content: right;
+  }
+  .addTaxBtn {
+    background: rgb(241, 109, 55);
+    color: white;
+    width: fit-content;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+.addTaxBtn:hover {
+    cursor: pointer;
+    background: rgb(229, 78, 16);
+}
+
+.checkbox1 input {
+    display: none;
+  }
+  
+  .checkbox1 {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+  .checkbox1 span {
+    /* border: 3px solid #7e8a94; */
+    /* float: right; */
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 3px solid #3F9AB6;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox1:hover span,
+  .checkbox1 input:checked + span {
+    border: 3px solid #3F9AB6;
+  }
+  
+  .checkbox1 input:checked + span:before {
+    content: "✓";
+    color: #3F9AB6;
+  }
+
+  .checkbox1 input {
+    display: none;
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin:  20px 0;
+  }
+  
+  .radiobtn input {
+    display: none;
+  }
+  .radiobtn {
+    display: flex;
+    gap: 5px;
+    /* padding-left: 10px; */
+    /* margin-right: 20px; */
+  }
+  .radiobtn span {
+    border: 1px solid #7e8a94;
+    /* float: right; */
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    /* border: #e54e10; */
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .radiobtn:hover span,
+  .radiobtn input:checked + .radiobtn>span {
+    border: 1px solid #e54e10;
+  }
+  /* .radiobtn span, */
+  .radiobtn input:checked + span:before {
+    content: "✓";
+    color: white;
+  }
+  input[type=radio]:checked + span {
+    background: #e54e10;
+    border: 1px solid #e54e10;
+  }
