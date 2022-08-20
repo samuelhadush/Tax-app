@@ -1,3 +1,6 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     display: flex;
     align-items: center;
@@ -5,11 +8,15 @@
 }
 
 .main {
-    width: 75%;
     height: 100vh;
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media screen and (min-width:960px) {
+    .main {
+        width: 65%;
+    }
 }
 
 .content {
