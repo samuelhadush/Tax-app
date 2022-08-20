@@ -1,5 +1,5 @@
 import React from 'react'
-import AddTax from './addTax'
+import AddTax from './AddTax'
 import "./styles/style.css"
 
 function App() {

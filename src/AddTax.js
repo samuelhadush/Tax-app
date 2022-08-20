@@ -6,7 +6,6 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 import Button from './components/Button';
 import {API} from './services/Api'
-import './styles/style.css'
 
 const validationSchema = Yup.object().shape({
     name: Yup.string()
