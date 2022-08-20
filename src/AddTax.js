@@ -159,6 +159,8 @@ function AddTax() {
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
+                validateOnChange={false}
+                validateOnBlur={false}
                 onSubmit={async (values) => {
                     alert(JSON.stringify(values, null, 2));
                 }}
@@ -168,8 +170,6 @@ function AddTax() {
                         <div className='content tax-name-rate'>
                         <Field id="name" name="name"
                             placeholder="Tax Name"
-                            touched={touched.name}
-                            invalid={errors.name}
                             style={getStyles(errors, "name")}
                         />
                         {/* <ErrorMessage name="name" /> */}
@@ -178,10 +178,6 @@ function AddTax() {
                             type="number"
                             id='rate'
                             name='rate'
-                            suffix="%"
-                            touched={touched.rate}
-                            invalid={errors.rate}
-                            
 
                         /><span>%</span>
                         </div>

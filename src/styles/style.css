@@ -13,9 +13,12 @@ html{
     margin-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-@media screen and (min-width:960px) {
+@media (min-width:960px) {
     .main {
-        width: 65%;
+        width: 48rem;
+    }
+    .tax-name-rate {
+        width: 36rem;
     }
 }
 
@@ -37,18 +40,20 @@ input {
 }
 .tax-name-rate {
     display: flex;
-    width: 75%;
+    /* width: 36rem; */
+}
+@media screen and (min-width) {
     
 }
 .tax-name-rate > input:first-child {
+    position: relative;
     border: 1px solid gray;
     border-radius: 4px;
     padding: 0.5rem;
-    position: relative;
     width: 75%;
     margin-right: 10px;
 }
-.tax-name-rate > input:last-child {
+.tax-name-rate:last-child {
     position: relative;
     border: none;
     /* padding: 0.5rem; */
